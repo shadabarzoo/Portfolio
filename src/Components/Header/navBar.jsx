@@ -1,0 +1,83 @@
+import React from 'react';
+import { Link } from 'react-scroll';
+import './navBar.css';
+import logo from '../../Assets/salogo.png';
+
+const NavBar = () => {
+  return (
+    <nav className="navbar">
+      <div className="navbar-container">
+        {/* Logo */}
+        <div className="navbar-logo" aria-label="My Portfolio Logo">
+          <img src={logo} alt="Logo" />
+        </div>
+        
+        {/* Navigation Links */}
+        <ul className="navbar-links">
+          <li>
+            <Link 
+              to="about" 
+              smooth={true} 
+              duration={500} 
+              offset={-70} 
+              aria-label="About section">
+              About
+            </Link>
+          </li>
+          <li>
+            <Link 
+              to="education" 
+              smooth={true} 
+              duration={500} 
+              offset={-70} 
+              aria-label="Education section">
+              Education
+            </Link>
+          </li>
+          <li>
+            <Link 
+              to="internship" 
+              smooth={true} 
+              duration={500} 
+              offset={-70} 
+              aria-label="Internship section">
+              Internship
+            </Link>
+          </li>
+          <li>
+            <Link 
+              to="skills" 
+              smooth={true} 
+              duration={500} 
+              offset={-70} 
+              aria-label="Skills section">
+              Skills
+            </Link>
+          </li>
+          <li>
+            <Link 
+              to="projects" 
+              smooth={true} 
+              duration={500} 
+              offset={-70} 
+              aria-label="Projects section">
+              Projects
+            </Link>
+          </li>
+          <li>
+            <Link 
+              to="contact" 
+              smooth={true} 
+              duration={500} 
+              offset={-70} 
+              aria-label="Contact section">
+              Contact
+            </Link>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  );
+}
+
+export default NavBar;

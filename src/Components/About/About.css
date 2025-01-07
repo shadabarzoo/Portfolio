@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lora:wght@400;700&family=Poppins:wght@400;700&family=Montserrat:wght@400;700&display=swap');
+
+
+.about-container-main{
+  text-align: center;
+  padding-top: 4rem;
+}
+.about-container {
+    background-color: #222; /* Dark background for the About section */
+    color: white;           /* White text color */
+    text-align: center;      /* Padding around the content */
+    border-radius: 8px;     /* Rounded corners for a modern look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+     display: flex;/* Subtle shadow for depth */
+     padding-bottom: 1.5rem;
+     padding-left: 3rem;
+     padding-top: 0.5rem;
+  }
+  .about-info {
+    background-color: #222; /* Dark background for the About section */
+    color: white;           /* White text color */
+    text-align: center; 
+    margin-top: 1rem;  
+    margin-left: 1rem; /* Center-align the text */
+    padding: 20px 20px;     /* Padding around the content */
+    border-radius: 8px;     /* Rounded corners for a modern look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);/* Subtle shadow for depth */
+  }
+  .about-container image{
+    height: 4rem;
+    width: auto;
+  }
+  .button {
+    display: flex;
+    gap: 2rem; /* Adds spacing between buttons */
+    justify-content: center; /* Centers the buttons horizontally */
+    margin-top: 1rem; /* Adds space above buttons */
+}
+
+h3 {
+  display: flex; /* Adjust spacing between elements if needed */
+  margin: 0; /* Remove extra margin */
+  padding: 0; /* Remove extra padding */
+  font-family: Playwrite Ísland;
+}
+
+.name {
+  display: flex; /* Align elements horizontally */
+  gap: 0.3rem; /* Reduce space between "I'm" and "Shadab Arzoo" */
+  font-size: 1.5rem; /* Adjust font size */
+  font-weight: bold; /* Make text stand out */
+  margin: 0; /* Remove extra margin */
+  padding-top: 1rem; /* Remove extra padding */
+  font-family: Playwrite Ísland;
+}
+
+.shadabarzoo {
+  color: orange; /* Add a distinct color for your name */
+}
+
+.fed {
+  display: flex; /* Keep this text on a new line */
+  margin-top: 0.5rem; /* Add some space above the text */
+  font-size: 1.5rem;
+  margin: 0; /* Remove extra margin */ /* Neutral color for better contrast */
+  padding-top: 1rem;
+  font-family: Playwrite Ísland;
+}
+
+.myself {
+  margin-top: 1rem;
+  text-align: justify;
+}
+
+.hireme {
+  background-color: orange;
+  color: white;
+  font-size: 1.1rem;
+  border-radius: 0.5rem;
+  transition: transform 1s;
+  font-family: Playwrite Ísland;
+}
+.hireme:hover{
+  transform: scale(1.2);
+  background-color: white;
+  color: orange;
+}
+.resume {
+  background-color: orange;
+  color: white;
+  font-size: 1.1rem;
+  border-radius: 0.5rem;
+  transition: transform 1s;
+  font-family: Playwrite Ísland;
+}
+.resume:hover{
+  transform: scale(1.1);
+  background-color: white;
+  color: orange;
+}
+  @media (max-width: 768px) {
+    h2 {
+      font-size: 2rem; /* Smaller heading font size for mobile */
+    }
+  
+    p {
+      font-size: 1rem; /* Smaller text for paragraph on mobile */
+      padding: 0 10px; /* Padding on sides to prevent text from touching the edges */
+    }
+    
+  }
+  

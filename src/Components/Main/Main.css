@@ -1,0 +1,26 @@
+.main-container {
+    background-color: black;
+    color: white;
+    min-height: 100vh; /* Ensure the content takes the full height */
+    padding: 20px;
+  }
+  
+  section {
+    padding: 60px 20px;
+    margin-bottom: 50px;
+  }
+  
+  h2 {
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+  }
+  
+  section:nth-child(even) {
+    background-color: #1e1e1e; /* Darker background for alternate sections */
+  }
+  
+  section:nth-child(odd) {
+    background-color: #333;
+  }
+  
