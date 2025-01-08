@@ -62,7 +62,7 @@ const About = () => {
             </div>
             <div className="resume">
               <a
-                href="/resume.pdf" // Path to your resume file
+                href="./resume.pdf" // Path to your resume file
                 download="Shadab_Arzoo_Resume.pdf" // Specify download name
                 className="resume-link"
               >
