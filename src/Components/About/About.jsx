@@ -61,13 +61,14 @@ const About = () => {
               </button>
             </div>
             <div className="resume">
-              <a
-                href="./resume.pdf" // Path to your resume file
-                download="Shadab_Arzoo_Resume.pdf" // Specify download name
-                className="resume-link"
-              >
-                <button className="resume">Download Resume</button>
-              </a>
+            <a
+              href="/resume.pdf" // Absolute path for GitHub Pages
+              download="Shadab_Arzoo_Resume.pdf" // Specify download name
+              className="resume-link"
+            >
+              <button className="resume">Download Resume</button>
+            </a>
+
             </div>
           </div>
         </div>
