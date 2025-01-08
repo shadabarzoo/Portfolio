@@ -8,7 +8,14 @@ const About = () => {
 
   useEffect(() => {
     const options = {
-      strings: ['A Software Engineer','A Front End Developer', 'A Full Stack Developer','A Web Developer','A Mobile App Developer','A Problem Solver'],
+      strings: [
+        'A Software Engineer',
+        'A Front End Developer',
+        'A Full Stack Developer',
+        'A Web Developer',
+        'A Mobile App Developer',
+        'A Problem Solver',
+      ],
       typeSpeed: 50, // Speed of typing
       backSpeed: 25, // Speed of backspacing
       loop: true, // Loop the typing effect
@@ -44,7 +51,14 @@ const About = () => {
 
           <div className="button">
             <div className="hire-me">
-              <button className="hireme">Hire Me</button>
+              <button
+                className="hireme"
+                onClick={() =>
+                  window.location.href = "mailto:shadabarzoo6@gmail.com"
+                }
+              >
+                Hire Me
+              </button>
             </div>
             <div className="resume">
               <a

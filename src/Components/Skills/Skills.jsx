@@ -12,57 +12,30 @@ import canvaImg from'../../Assets/canva.png';
 
 const Skills = () => {
   const skillsList = [
-    {
-      name: 'HTML',
-      image: htmlImg,
-    },
-    {
-      name: 'CSS',
-      image: cssImg,
-    },
-    {
-      name: 'JavaScript',
-      image: jsImg,
-    },
-    {
-      name: 'Bootstrap',
-      image: bsImg,
-    },
-    {
-        name: 'React',
-        image: reactImg,
-      },
-      {
-        name: 'Python',
-        image: pyImg,
-      },
-      {
-        name: 'SQL',
-        image: sqlImg,
-      },
-      {
-        name: 'MongoDB',
-        image: mongoImg,
-      },
-      {
-        name: 'Canva',
-        image: canvaImg,
-      },
+    { name: 'HTML', image: htmlImg },
+    { name: 'CSS', image: cssImg },
+    { name: 'JavaScript', image: jsImg },
+    { name: 'Bootstrap', image: bsImg },
+    { name: 'React', image: reactImg },
+    { name: 'Python', image: pyImg },
+    { name: 'SQL', image: sqlImg },
+    { name: 'MongoDB', image: mongoImg },
+    { name: 'Canva', image: canvaImg },
   ];
 
   return (
     <div className="skill-container-main">
-        <h2>My Skills</h2>
-        <div className="skills-container">
+      <h2>My Skills</h2>
+      <div className="skills-container">
         <div className="skills-grid">
-            {skillsList.map((skill, index) => (
+          {skillsList.map((skill, index) => (
             <div className="skill-card" key={index}>
-                <img src={skill.image} alt={skill.name} />
-                <h3>{skill.name}</h3>
+              <img src={skill.image} alt={skill.name} />
+              <h3>{skill.name}</h3>
             </div>
-        ))}
+          ))}
+        </div>
       </div>
-    </div>
     </div>
   );
 };

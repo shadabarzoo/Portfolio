@@ -1,76 +1,102 @@
-.skill-container-main{
+.skill-container-main {
   text-align: center;
 }
 
 .skills-container {
-    background-color: #222; /* Dark background */
-    color: white;           /* White text color */
-    text-align: center;     /* Center-align the text */
-    padding: 60px 20px;     /* Padding around the content */
-    border-radius: 8px;     /* Rounded corners for a modern look */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
-    overflow: hidden;       /* Prevent overflow */
-    position: relative;     /* Make the container the context for scrolling */
+  background-color: #222; /* Dark background */
+  color: white;           /* White text color */
+  text-align: center;     /* Center-align the text */
+  padding: 60px 20px;     /* Padding around the content */
+  border-radius: 8px;     /* Rounded corners for a modern look */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+  overflow: hidden;       /* Prevent overflow */
+}
+
+h2 {
+  font-size: 2.5rem;       /* Larger font size for the heading */
+  margin-bottom: 30px;     /* Space below the heading */
+}
+
+.skills-grid {
+  display: flex;           /* Use flexbox to create the row layout */
+  gap: 20px;               /* Gap between skill cards */
+  flex-wrap: nowrap;       /* Prevent cards from wrapping */
+  justify-content: flex-start; /* Align items to the left */
+  animation: scrollCircular 15s linear infinite; /* Default scroll speed for web */
+  width: max-content;      /* Ensure the width is large enough to fit all cards */
+}
+
+.skill-card {
+  background-color: #333;  /* Darker background for cards */
+  color: white;            /* White text color */
+  padding: 20px;           /* Padding inside each card */
+  border-radius: 8px;      /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+  text-align: center;      /* Center-align text */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 250px;        /* Minimum width for each card */
+  height: 200px;           /* Fixed height for the cards */
+  flex-shrink: 0;          /* Prevent shrinking */
+}
+
+.skill-card h3 {
+  font-size: 1.5rem;       /* Heading size */
+  margin-top: 10px;        /* Space above the text */
+}
+
+.skill-card img {
+  height: 6rem;            /* Set height of the image */
+  width: 6rem;             /* Set width of the image */
+  object-fit: contain;     /* Ensure image is contained within its box */
+}
+
+@keyframes scrollCircular {
+  0% {
+    transform: translateX(0); /* Start at the beginning */
   }
-  
-  h2 {
-    font-size: 2.5rem;       /* Larger font size for the heading */
-    margin-bottom: 30px;     /* Space below the heading */
+  50% {
+    transform: translateX(-50%); /* Scroll halfway through */
   }
-  
+  100% {
+    transform: translateX(-100%); /* End at the complete left, start over */
+  }
+}
+
+.skills-grid:after {
+  content: '';  /* Add a pseudo-element to allow the scroll to seamlessly loop */
+  width: 100%;   /* Match the width of the original content */
+}
+
+@media (max-width: 768px) {
   .skills-grid {
-    display: flex;           /* Use flexbox to create the row layout */
-    gap: 20px;               /* Gap between skill cards */
-    flex-wrap: nowrap;       /* Prevent cards from wrapping */
-    animation: scrollCircular 20s linear infinite; /* Smooth infinite scroll */
+    animation: scrollCircular 15s linear infinite; /* Faster scroll speed for mobile */
+    gap: 10px; /* Adjust gap for mobile */
+    justify-content: flex-start; /* Keep the cards aligned to the left */
   }
-  
+
   .skill-card {
-    background-color: #333;  /* Darker background for cards */
-    color: white;            /* White text color */
-    padding: 20px;           /* Padding inside each card */
-    border-radius: 8px;      /* Rounded corners */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Shadow for depth */
-    text-align: center;      /* Center-align text */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-width: 250px;        /* Ensure each card has a minimum width */
-    height: 200px;           /* Set a fixed height for the cards */
+    width: 200px;             /* Fixed width for cards on mobile */
+    max-width: 200px;         /* Ensure a maximum width */
+    margin: 10px;             /* Add margin around the cards */
   }
-  
-  .skill-card h3 {
-    font-size: 1.5rem;       /* Heading size */
-    margin-top: 10px;        /* Add space above the text */
+
+  h2 {
+    font-size: 2rem;          /* Adjust the heading size */
   }
-  
-  .skill-card img {
-    height: 6rem;            /* Set height of the image */
-    width: 6rem;             /* Set width of the image */
-    object-fit: contain;     /* Ensure image is contained within its box */
+}
+
+@media (max-width: 375px) {
+  .skills-grid {
+    animation: scrollCircular 15s linear infinite; /* Faster speed on very small screens */
+    gap: 8px;                /* Smaller gap between cards */
   }
-  
-  @keyframes scrollCircular {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-100%); /* Move the entire grid to the left */
-    }
+
+  .skill-card {
+    width: 180px;             /* Adjust width for very small screens */
+    max-width: 180px;         /* Limit the width for each card */
+    margin: 8px;              /* Smaller margin */
   }
-  
-  @media (max-width: 768px) {
-    h2 {
-      font-size: 2rem; /* Smaller heading size for mobile */
-    }
-  
-    .skill-card h3 {
-      font-size: 1.2rem; /* Adjust heading size for smaller screens */
-    }
-  
-    .skill-card p {
-      font-size: 0.9rem; /* Smaller paragraph text for mobile */
-    }
-  }
-  
+}

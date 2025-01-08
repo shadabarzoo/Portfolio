@@ -1,6 +1,5 @@
 .contact-container-main{
   text-align: center;
-  padding-bottom: 1rem;
 }
 
 .contact-container {
@@ -49,8 +48,12 @@
   
   .contact-item p {
     font-size: 1.1rem;        /* Slightly larger font size for the paragraph */
+    color: #61dafb;
   }
-  
+  .contact-item p:hover {
+    font-size: 1.1rem;        /* Slightly larger font size for the paragraph */
+    color: orange;
+  }
   .contact-item a {
     color: #61dafb;           /* Link color */
     text-decoration: none;    /* Remove underline from links */
@@ -58,6 +61,7 @@
   
   .contact-item a:hover {
     text-decoration: underline; /* Underline on hover */
+    color: orange;
   }
   .block{
     display: flex;
@@ -66,7 +70,7 @@
   .block i{
     font-size: 1.5rem;
     transition: transform 1s;
-    padding-left: 7rem;
+    padding-left: 6rem;
   }
   .block i:hover{
     transform: scale(1.2);
