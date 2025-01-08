@@ -62,8 +62,8 @@ const About = () => {
             </div>
             <div className="resume">
               <a
-                href="/resume.pdf" // Path to your resume file
-                download="Shadab_Arzoo_Resume.pdf" // Specify download name
+                href="/Portfolio/resume.pdf"  // Correct path for GitHub Pages (starting with '/Portfolio' for your repo)
+                download="Shadab_Arzoo_Resume.pdf"  // Name of the file when downloading
                 className="resume-link"
               >
                 <button className="resume">Download Resume</button>
