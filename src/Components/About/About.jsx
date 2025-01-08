@@ -62,7 +62,7 @@ const About = () => {
             </div>
             <div className="resume">
               <a
-                href="/Portfolio/resume.pdf"  // Correct path for GitHub Pages (starting with '/Portfolio' for your repo)
+                href="https://shadabarzoo.github.io/Portfolio/resume.pdf"  // Correct path for GitHub Pages (starting with '/Portfolio' for your repo)
                 download="Shadab_Arzoo_Resume.pdf"  // Name of the file when downloading
                 className="resume-link"
               >
