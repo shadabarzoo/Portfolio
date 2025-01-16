@@ -1,0 +1,88 @@
+.contact-container-main{
+  text-align: center;
+}
+
+.contact-container {
+    background-color: #222; /* Dark background for the contact section */
+    color: white;           /* White text color */
+    text-align: center;     /* Center-align the text */
+    padding: 60px 20px;     /* Padding around the content */
+    border-radius: 8px;     /* Rounded corners for a modern look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+  }
+  
+  h2 {
+    font-size: 2.5rem;       /* Larger font size for the heading */
+    margin-bottom: 20px;     /* Space below the heading */
+  }
+  
+  p {
+    font-size: 1.1rem;       /* Slightly larger font size for the paragraph */
+    line-height: 1.6;        /* Increased line height for readability */
+    max-width: 800px;        /* Max width to prevent text from stretching too wide */
+    margin: 0 auto;          /* Center-align the paragraph */
+  }
+  
+  .contact-details {
+    display: grid;           /* Grid layout for contact items */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive columns */
+    gap: 20px;               /* Gap between the contact items */
+    margin-top: 30px;
+  }
+  
+  .contact-item {
+    background-color: #333;  /* Darker background for individual items */
+    padding: 20px;            /* Padding inside each contact item */
+    border-radius: 8px;       /* Rounded corners for each item */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+    transition: transform 1s;
+  }
+  .contact-item:hover{
+    transform: scale(1.2);
+  }
+  
+  .contact-item h3 {
+    font-size: 1.5rem;        /* Larger font size for each contact heading */
+    margin-bottom: 10px;      /* Space below the heading */
+  }
+  
+  .contact-item p {
+    font-size: 1.1rem;        /* Slightly larger font size for the paragraph */
+    color: #61dafb;
+  }
+  .contact-item p:hover {
+    font-size: 1.1rem;        /* Slightly larger font size for the paragraph */
+    color: orange;
+  }
+  .contact-item a {
+    color: #61dafb;           /* Link color */
+    text-decoration: none;    /* Remove underline from links */
+  }
+  
+  .contact-item a:hover {
+    text-decoration: underline; /* Underline on hover */
+    color: orange;
+  }
+  .block{
+    display: flex;
+    align-items: center;
+  }
+  .block i{
+    font-size: 1.5rem;
+    transition: transform 1s;
+    padding-left: 6rem;
+  }
+  .block i:hover{
+    transform: scale(1.2);
+  }
+  @media (max-width: 768px) {
+    h2 {
+      font-size: 2rem; /* Smaller heading font size for mobile */
+    }
+  
+    p {
+      font-size: 1rem; /* Smaller text for paragraph on mobile */
+      padding: 0 10px; /* Padding on sides to prevent text from touching the edges */
+    }
+  }
+  

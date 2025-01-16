@@ -1,0 +1,111 @@
+.education-container-main{
+    text-align: center;
+  }
+  
+  .education-container {
+      background-color: #222; /* Dark background */
+      color: white;           /* White text for contrast */
+      text-align: center;     /* Center-align the content */
+      padding: 60px ;     /* Padding for spacing */
+      border-radius: 8px;     /* Rounded corners for modern design */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+    }
+    
+    h2 {
+      font-size: 2.5rem;       /* Larger heading size */
+      margin-bottom: 30px;     /* Space below the heading */
+    }
+    .role {
+      color: orange;
+    }
+    .education-list {
+      max-width: 1200px;       /* Limit the width of the list */
+      margin: 0 auto;          /* Center the content */
+    }
+    
+    .education-card {
+      background-color: #333;  /* Slightly lighter background for cards */
+      color: white;            /* White text */
+      padding: 20px;           /* Padding inside each card */
+      margin-bottom: 20px;     /* Space between cards */
+      border-radius: 8px;      /* Rounded corners */
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+      text-align: left;  
+      transition: transform 1s;      /* Align text to the left */
+    }
+    .education-card:hover{
+      transform: scale(1.1);
+    }
+    
+    .education-card h3 {
+      font-size: 1.5rem;       /* Font size for role titles */
+      margin-bottom: 10px;     /* Space below role titles */
+    }
+    
+    .collage-name {
+      font-size: 1.2rem;       /* Font size for company name */
+      color: #61dafb;          /* Highlight the company name */
+    }
+    
+    .duration {
+      font-size: 1rem;         /* Smaller font for the duration */
+      color: #61dafb;
+      margin-bottom: 15px;     /* Space below the duration */
+    }
+    .collage-name, .duration {
+      padding-left: 3rem; /* Removes left padding */
+      margin-left: 0; 
+    }
+    .achievements {
+      list-style: disc;        /* Bulleted list style */
+      padding-left: 20px;      /* Indentation for the list */
+      line-height: 1.5;        /* Line height for readability */
+    }
+    
+    .achievements li {
+      margin-bottom: 10px;     /* Space between list items */
+    }
+
+    .marks {
+      display: flex;           /* Flexbox for aligning buttons */
+      flex-wrap: wrap;         /* Wrap buttons to the next line if needed */
+      gap: 10px;   
+      padding-bottom: 1.5rem;   
+      padding-left: 3rem;       
+    }
+    
+    
+    .mark-button {
+      background-color: #3498db; /* Blue background for buttons */
+      color: white;              /* White text */
+      border: none;              /* Remove border */
+      padding: 8px 12px;         /* Padding inside the button */
+      border-radius: 20px;       /* Rounded edges */
+      cursor: pointer;          /* Pointer cursor on hover */
+      transition: background-color 0.3s; /* Smooth transition for background color */
+      transition: transform 0.7s;
+    }
+    
+    .mark-button:hover {
+      background-color: orange; /* Darker blue on hover */
+      transform: scale(1.2);
+    }
+    
+    .mark-button:focus {
+      outline: none;             /* Remove focus outline */
+    }
+    
+    @media (max-width: 768px) {
+      h2 {
+        font-size: 2rem;       /* Smaller heading size on mobile */
+      }
+    
+      .education-card h3 {
+        font-size: 1.2rem;     /* Adjust role title size for smaller screens */
+      }
+    
+      .achievements li {
+        font-size: 0.9rem;     /* Smaller text for list items on mobile */
+      }
+    }
+    
