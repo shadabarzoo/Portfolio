@@ -10,13 +10,9 @@ const NavBar = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
-<<<<<<< HEAD
-=======
   const handleLinkClick = () => {
     setIsMenuOpen(false); // Close the menu
   };
-
->>>>>>> a793a4c6f0c6e3df0a1b0619fba08d7bc4e55cc4
   return (
     <nav className="navbar">
       <div className="navbar-container">
