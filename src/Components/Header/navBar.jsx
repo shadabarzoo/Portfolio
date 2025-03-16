@@ -10,6 +10,13 @@ const NavBar = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+<<<<<<< HEAD
+=======
+  const handleLinkClick = () => {
+    setIsMenuOpen(false); // Close the menu
+  };
+
+>>>>>>> a793a4c6f0c6e3df0a1b0619fba08d7bc4e55cc4
   return (
     <nav className="navbar">
       <div className="navbar-container">
@@ -33,6 +40,7 @@ const NavBar = () => {
               smooth={true} 
               duration={500} 
               offset={-70} 
+              onClick={handleLinkClick} // Close menu on click
               aria-label="About section">
               About
             </Link>
@@ -43,6 +51,7 @@ const NavBar = () => {
               smooth={true} 
               duration={500} 
               offset={-70} 
+              onClick={handleLinkClick} // Close menu on click
               aria-label="Education section">
               Education
             </Link>
@@ -53,6 +62,7 @@ const NavBar = () => {
               smooth={true} 
               duration={500} 
               offset={-70} 
+              onClick={handleLinkClick} // Close menu on click
               aria-label="Internship section">
               Internship
             </Link>
@@ -63,6 +73,7 @@ const NavBar = () => {
               smooth={true} 
               duration={500} 
               offset={-70} 
+              onClick={handleLinkClick} // Close menu on click
               aria-label="Skills section">
               Skills
             </Link>
@@ -73,6 +84,7 @@ const NavBar = () => {
               smooth={true} 
               duration={500} 
               offset={-70} 
+              onClick={handleLinkClick} // Close menu on click
               aria-label="Projects section">
               Projects
             </Link>
@@ -83,6 +95,7 @@ const NavBar = () => {
               smooth={true} 
               duration={500} 
               offset={-70} 
+              onClick={handleLinkClick} // Close menu on click
               aria-label="Contact section">
               Contact
             </Link>
@@ -91,6 +104,6 @@ const NavBar = () => {
       </div>
     </nav>
   );
-}
+};
 
 export default NavBar;
