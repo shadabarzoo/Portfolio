@@ -53,22 +53,10 @@ const About = () => {
                 onClick={() =>
                   window.location.href = "mailto:shadabarzoo6@gmail.com"
                 }
-<<<<<<< HEAD
-=======
               >
                 Hire Me
               </button>
             </div>
-            <div className="resume">
-              <a
-                href="/Portfolio/resume.pdf"  // Correct path for GitHub Pages (starting with '/Portfolio' for your repo)
-                download="Shadab_Arzoo_Resume.pdf"  // Name of the file when downloading
-                className="resume-link"
->>>>>>> a793a4c6f0c6e3df0a1b0619fba08d7bc4e55cc4
-              >
-                Hire Me
-              </button>
-            </div> 
             <div className="resume">
             <a
               href="https://drive.google.com/file/d/1DHa6yoUq-Q9bPHTEvmmjFpDhPCPItvEG/view?usp=sharing"

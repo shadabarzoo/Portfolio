@@ -29,11 +29,8 @@
 
 .image {
   flex: 1 1 300px; /* Flexible layout for responsiveness */
-<<<<<<< HEAD
   max-width: 300px;
-=======
   max-width: 700px;
->>>>>>> a793a4c6f0c6e3df0a1b0619fba08d7bc4e55cc4
   margin: auto;
 }
 
