@@ -11,7 +11,6 @@ body {
 .App {
   position: relative; /* Ensure content is above the video */
   z-index: 1;
-  min-height: 100vh;
 }
 
 /* Background video styles */
@@ -27,17 +26,71 @@ body {
 
 /* Section styles */
 .section {
-  padding: 10px 20px; /* Consistent padding for sections */
-  position: relative; /* Ensures content remains above the video */
-  z-index: 1;
+  min-height: 50vh; /* Full height of the viewport */
+  width: 100%; /* Full width of the viewport */
+  padding: 60px 20px; /* Equal padding on both sides */
+  position: relative; /* Ensure content remains above the video */
+  z-index: 1; /* Above the background video */
+  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+  border-radius: 10px; /* Optional: Rounded corners */
+  box-sizing: border-box; /* Include padding in width calculation */
 }
 
+/* Custom spacing between sections */
+.section + .section {
+  margin-top: -4px; /* Prevent overlap caused by border-radius */
+}
+
+/* Specific styles for sections */
 #about,
 #internship,
 #education,
 #skills,
 #projects,
 #contact {
-  background-color: rgba(0, 0, 0, 0.8); /* Optional: Add a semi-transparent background */
   border-radius: 10px; /* Optional: Add rounded corners for sections */
+}
+
+/* Navbar adjustment to avoid overlapping with sections */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.9); /* Ensure navbar is visible */
+  padding: 10px 20px; /* Space for the navbar content */
+}
+
+/* Padding for the first section to avoid overlapping with navbar */
+#about {
+  padding-top: 20px; /* Adjust for navbar height */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .section {
+    padding: 20px; /* Adjust padding for smaller screens to ensure equal spacing */
+  }
+
+  #about {
+    padding-top: 80px; /* Adjust for navbar height */
+  }
+
+  /* Ensure the sections fit nicely on smaller screens */
+  .section {
+    min-height: 50vh; /* Full viewport height */
+  }
+
+  /* Adjust navbar padding for mobile view */
+  .navbar {
+    padding: 10px 15px; /* Adjust navbar spacing */
+  }
+}
+
+/* Fix for right margin/padding issues */
+.container {
+  margin: 0 auto; /* Center the container */
+  padding: 0 20px; /* Equal padding on both sides */
+  max-width: 1200px; /* Limit the width for better alignment */
+  box-sizing: border-box; /* Include padding in the width calculation */
 }

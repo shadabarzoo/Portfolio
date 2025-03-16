@@ -7,7 +7,7 @@ const Education = () => {
       role: 'BTech in Computer Science and Engineering',
       collage: 'Jodhpur Institute of Engineering and Technology',
       duration: 'August 2021 - May 2025',
-      marks: ['8.0 CGPA'],
+      marks: ['8.15 CGPA'],
     },
     {
       role: 'High School',

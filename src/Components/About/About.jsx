@@ -8,7 +8,14 @@ const About = () => {
 
   useEffect(() => {
     const options = {
-      strings: ['A Software Engineer','A Front End Developer', 'A Full Stack Developer','A Web Developer','A Mobile App Developer','A Problem Solver'],
+      strings: [
+        'A Software Engineer',
+        'A Front End Developer',
+        'A Full Stack Developer',
+        'A Web Developer',
+        'A Mobile App Developer',
+        'A Problem Solver',
+      ],
       typeSpeed: 50, // Speed of typing
       backSpeed: 25, // Speed of backspacing
       loop: true, // Loop the typing effect
@@ -36,25 +43,30 @@ const About = () => {
           <span className="fed"></span> {/* Typing animation container */}
 
           <p className="myself">
-            Specialized in creating dynamic and responsive websites and applications. With a strong foundation in
-            frontend technologies such as React, HTML, CSS, and JavaScript, I am continuously learning and improving
-            my skills to stay updated with the latest trends in development. My goal is to craft user-friendly,
-            high-performance solutions that meet both functional and aesthetic requirements.
+          Specialized in developing dynamic and responsive websites and applications, leveraging a strong foundation in frontend technologies such as React, HTML, CSS, and JavaScript. Committed to continuous learning, I stay updated with the latest industry trends to enhance my expertise. My focus is on delivering user-centric, high-performance solutions that seamlessly integrate functionality with exceptional design.
           </p>
 
           <div className="button">
             <div className="hire-me">
-              <button className="hireme">Hire Me</button>
-            </div>
-            <div className="resume">
-              <a
-                href="/Shadab_WA.pdf" // Path to your resume file
-                download="Shadab_Arzoo_Resume.pdf" // Specify download name
-                className="resume-link"
+              <button
+                className="hireme"
+                onClick={() =>
+                  window.location.href = "mailto:shadabarzoo6@gmail.com"
+                }
               >
-                <button className="resume">Download Resume</button>
-              </a>
-            </div>
+                Hire Me
+              </button>
+            </div> 
+            <div className="resume">
+            <a
+              href="https://drive.google.com/file/d/1DHa6yoUq-Q9bPHTEvmmjFpDhPCPItvEG/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="resume-link"
+            >
+              <button className="resume">Download Resume</button>
+            </a>
+          </div>
           </div>
         </div>
 
