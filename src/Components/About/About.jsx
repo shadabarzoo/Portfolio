@@ -59,7 +59,7 @@ const About = () => {
             </div>
             <div className="resume">
             <a
-              href="https://drive.google.com/file/d/1DHa6yoUq-Q9bPHTEvmmjFpDhPCPItvEG/view?usp=sharing"
+              href="https://drive.google.com/file/d/1rD3teHBAziU9-BFFbv1TU-Ox-6IWiiLS/view?usp=drivesdk"
               target="_blank"
               rel="noopener noreferrer"
               className="resume-link"
