@@ -35,7 +35,7 @@
 }
 
 .image img {
-  width: 100%; /* Make the image responsive */
+  width: 19rem; /* Make the image responsive */
   height: auto;
   border-radius: 50%; /* Optional: Adds a circular shape to the image */
 }

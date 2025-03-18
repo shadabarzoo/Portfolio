@@ -18,7 +18,7 @@ h2 {
 
 .projects-grid {
   display: grid;           /* Grid layout for project cards */
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid */
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); /* Responsive grid */
   gap: 20px;               /* Gap between project cards */
   max-width: 1200px;       /* Max width for the grid */
   margin: 0 auto;          /* Center-align the grid */
@@ -89,6 +89,12 @@ h2 {
 
 .skill-button:focus {
   outline: none;             /* Remove focus outline */
+}
+
+.project-card img {
+  height: auto;            /* Set height of the image */
+  width: 100%;             /* Set width of the image */
+  object-fit: contain;     /* Ensure image is contained within its box */
 }
 
 @media (max-width: 768px) {
