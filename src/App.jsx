@@ -96,8 +96,9 @@ const data = {
     { type: "phone",  label: "+91 8271965614",          href: "tel:+918271965614" },
     { type: "insta",  label: "theshadabarzoo",          href: "https://www.instagram.com/theshadabarzoo?igsh=OGJ0eWRvMzRqYnFr" },
     { type: "github", label: "GitHub Profile",          href: "https://github.com/shadabarzoo" },
+    { type: "linkedin", label: "LinkedIn Profile",          href: "https://in.linkedin.com/in/shadabarzoo" }
   ],
-  marqueeItems: ["React", "C#", "Svelte", "ASP.NET", "Python", "Flutter", "Firebase", "PostgreSQL", "Power BI", "Node.js"],
+  marqueeItems: ["React", "C#", "Svelte", "ASP.NET", "Python", "Flutter", "Firebase", "PostgreSQL", "MySQL", "Power BI", "Node.js"],
 };
 
 // ── SVG Icons ─────────────────────────────────────────────
