@@ -264,7 +264,7 @@ input::placeholder, textarea::placeholder { color: #aaa; }
   transition: transform 0.2s, box-shadow 0.2s, background 0.2s, color 0.2s;
 }
 .btn--resume:hover { transform: translateY(-4px); box-shadow: 0 20px 48px var(--shadow-lg); background: var(--black); color: var(--yellow); }
-.btn--resume-full { width: 100%; justify-content: center; }
+.btn--resume-full { width: 62%; justify-content: center; }
 
 /* ── HERO CARD ────────────────────────────────────────── */
 .hero__card-wrap { opacity: 0; animation: fadeUp 0.8s 0.9s forwards; }
